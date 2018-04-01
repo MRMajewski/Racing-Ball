@@ -24,6 +24,9 @@ public class Crystal : MonoBehaviour {
         GetComponent<Renderer>().enabled = false; //pobranie rendera i zdezaktywowanie go
 
         Active = false;
+
+        FindObjectOfType<GameController>().UpdateCrystalCounterText();//sięgamy do obiektu GameController i wywołujemy funkcje
+        // która podbija punkt za kryształ
     }
 
 }

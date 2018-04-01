@@ -5,6 +5,7 @@ using UnityEngine;
 public class Sphere : MonoBehaviour {
 
     public float speed = 10f;
+    public bool CanMove = false;
 	
 	void Start () {
 		
@@ -12,6 +13,8 @@ public class Sphere : MonoBehaviour {
 	
 	
 	void Update () {
+
+        if (!CanMove) return;
 
         var direction = Vector3.zero; // zmienna z kierunkiem
 
