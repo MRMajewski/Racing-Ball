@@ -11,6 +11,9 @@ public class GameController : MonoBehaviour {
     public Text CountdownText;
     public Text EndOfGameText;
 
+    public AudioClip WinSound;
+    public AudioClip LoseSound;
+
     // Use this for initialization
     void Start () {
 
@@ -26,33 +29,45 @@ public class GameController : MonoBehaviour {
     {
     }
 
-    IEnumerator CountdownCoroutine()
+   
+    IEnumerator CountdownCoroutine() //korutyna odliczania do startu
     {
-        FindObjectOfType<Sphere>().CanMove = false;
-        CountdownText.enabled = true;
+        SetIfBallCanMove(false); //kulka nie może się ruszać
+        CountdownText.enabled = true; //tekst z odliczaniem
 
-        for(int i=5;i>0;i--)
+        for(int i=5;i>0;i--) //odliczanie
         {
             CountdownText.text = i.ToString();
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(1f); //czekanie sekundy
         }
 
+   
         CountdownText.text = "START!";
-        FindObjectOfType<Sphere>().CanMove = true;
+        SetIfBallCanMove(true); // kulka może się ruszać
         yield return new WaitForSeconds(1f);
 
-        CountdownText.enabled = false;
+        CountdownText.enabled = false; // wyłączamy tekst
 
     }
 
+    void SetIfBallCanMove (bool canMove)
+    {
+       var ball = FindObjectOfType<Sphere>();
+        ball.CanMove = canMove;
+
+        ball.GetComponent<Rigidbody>().velocity = Vector3.zero;
+
+    }
+
+
     public void UpdateCrystalCounterText()
     {
-        var crystals = FindObjectsOfType<Crystal>();
+        var crystals = FindObjectsOfType<Crystal>(); //podliczamy wszystkie kryształy i wartość dajemy do tablicy
 
-        var crystalsCount = crystals.Length;
-        var crystalInactive = crystals.Count(Crystal => !Crystal.Active);
+        var crystalsCount = crystals.Length; // zwracamy długość tablicy tzn ilość kryształów
+        var crystalInactive = crystals.Count(Crystal => !Crystal.Active); //ilość nieaktywnym kryształów
 
-        var text = crystalInactive + " / " + crystalsCount;
+        var text = crystalInactive + " / " + crystalsCount; // wyświetlany tekst licznika
 
         CrystalCounterText.text = text;
     }
@@ -69,8 +84,28 @@ public class GameController : MonoBehaviour {
 
     public void EndOfGame(bool win)
     {
+        StartCoroutine(EndOfGameCoroutine(win));
+        
+    }
+
+
+    IEnumerator EndOfGameCoroutine(bool win)
+    {
+        SetIfBallCanMove(false);
+
         EndOfGameText.enabled = true;
         EndOfGameText.text = win ? "WIN!" : "LOSE!";
+
+        var audioSource=GetComponent<AudioSource>();
+
+        audioSource.clip = win ? WinSound : LoseSound;
+
+        audioSource.Play();
+
+
+        yield return new WaitForSeconds(3f);
+
+
     }
 
 }
