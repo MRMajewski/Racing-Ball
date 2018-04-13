@@ -18,14 +18,21 @@ public class GameController : MonoBehaviour {
     void Start () {
 
         UpdateCrystalCounterText();
+        FixLighting();
         EndOfGameText.enabled = false;
         StartCoroutine(CountdownCoroutine());
 
     
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    void FixLighting()
+    {
+        RenderSettings.ambientLight = Color.white; // ustawienia oświetlenia
+        RenderSettings.ambientMode = UnityEngine.Rendering.AmbientMode.Flat;
+    }
+
+    // Update is called once per frame
+    void Update ()
     {
     }
 
