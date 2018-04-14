@@ -109,8 +109,11 @@ public class GameController : MonoBehaviour {
 
         audioSource.Play();
 
-
-        yield return new WaitForSeconds(3f);
+        if (win)
+        {
+            yield return new WaitForSeconds(3f);
+            Application.Quit();
+        }
 
 
     }

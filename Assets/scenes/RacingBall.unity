@@ -4309,6 +4309,11 @@ Prefab:
       propertyPath: m_Name
       value: Crystal (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 82848253704690230, guid: f2eeb91fae77fa74db8b4b9fa4e3355c,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.386
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f2eeb91fae77fa74db8b4b9fa4e3355c, type: 2}
   m_IsPrefabParent: 0

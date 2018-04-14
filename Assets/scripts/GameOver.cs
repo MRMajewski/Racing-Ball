@@ -13,7 +13,7 @@ public class GameOver : MonoBehaviour {
 
         FindObjectOfType<GameController>().EndOfGame(false);
 
-        StartCoroutine(restartGame()); 
+        StartCoroutine(restartGame());  // po przegraniu gra zaczyna się od nowa tzn od nowa ładuje level
 
     }
     IEnumerator restartGame()
@@ -21,4 +21,6 @@ public class GameOver : MonoBehaviour {
         yield return new WaitForSeconds(3f);
         SceneManager.LoadScene("RacingBall");
     }
+
+
 }
