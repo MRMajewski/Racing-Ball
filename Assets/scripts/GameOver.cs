@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour {
 
+    public string levelName;
 
 
     private void OnCollisionEnter(Collision collision)
@@ -19,7 +20,7 @@ public class GameOver : MonoBehaviour {
     IEnumerator restartGame()
     {
         yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene("RacingBall");
+        SceneManager.LoadScene(levelName);
     }
 
 
