@@ -55,6 +55,7 @@
      <Compile Include="Assets\scripts\Crystal.cs" />
      <Compile Include="Assets\scripts\GameController.cs" />
      <Compile Include="Assets\scripts\GameOver.cs" />
+     <Compile Include="Assets\scripts\MenuController.cs" />
      <Compile Include="Assets\scripts\Meta.cs" />
      <Compile Include="Assets\scripts\Obstacle.cs" />
      <Compile Include="Assets\scripts\Sphere.cs" />

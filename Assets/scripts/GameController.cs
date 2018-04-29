@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
@@ -10,6 +11,8 @@ public class GameController : MonoBehaviour {
     public Text CrystalCounterText;
     public Text CountdownText;
     public Text EndOfGameText;
+
+    public string NextlevelName;
 
     public AudioClip WinSound;
     public AudioClip LoseSound;
@@ -112,7 +115,11 @@ public class GameController : MonoBehaviour {
         if (win)
         {
             yield return new WaitForSeconds(3f);
-            Application.Quit();
+
+            if (NextlevelName == "")
+                Application.Quit();
+            else
+                SceneManager.LoadScene(NextlevelName);
         }
 
 

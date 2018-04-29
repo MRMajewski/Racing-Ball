@@ -425,7 +425,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 43650278}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0.2, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1987539384}
@@ -2538,7 +2538,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5a5b74b30add9048911cae29679bbce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f5a5b74b30add9048911cae29679bbce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3214,11 +3214,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4a85baa15824c004e9265ae93708faf9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.341
+      value: -3.141
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4a85baa15824c004e9265ae93708faf9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.300001
+      value: -6.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4a85baa15824c004e9265ae93708faf9, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4013,7 +4013,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3a22a9beb92e0fa45b2e1ed5f99ec769, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.341
+      value: -3.4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3a22a9beb92e0fa45b2e1ed5f99ec769, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5418,6 +5418,7 @@ MonoBehaviour:
   CrystalCounterText: {fileID: 333705661}
   CountdownText: {fileID: 17609113}
   EndOfGameText: {fileID: 1400435577}
+  NextlevelName: level2
   WinSound: {fileID: 8300000, guid: 121bd8bf856cf3544b2aebf239e66e91, type: 3}
   LoseSound: {fileID: 8300000, guid: 41bd60f3e75cb514b8e7e743480e0d24, type: 3}
 --- !u!4 &1808096430

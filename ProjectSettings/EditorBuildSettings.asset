@@ -6,5 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/scenes/RacingBall.unity
-    guid: 8d7e029ed637da544af14ac46c39159b
+    path: Assets/scenes/menu.unity
+    guid: d18459482c43d234486cde0949531404
+  - enabled: 1
+    path: Assets/scenes/menu2.unity
+    guid: 691d146177d9ecb44ae7d2f29741f028
+  - enabled: 1
+    path: Assets/scenes/level1.unity
+    guid: 93d1a7ff4d6705d40a4484ff20b2a68c
+  - enabled: 1
+    path: Assets/scenes/level2.unity
+    guid: 62f1435fddf518a489463efdfda6ed9b
