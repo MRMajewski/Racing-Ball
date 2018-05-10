@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 948
-  m_MinSize: {x: 583, y: 492}
+  m_MinSize: {x: 581, y: 471}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 2105
+  controlID: 1121
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1360
     height: 948
-  m_MinSize: {x: 306, y: 492}
+  m_MinSize: {x: 304, y: 471}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 2216
+  controlID: 1097
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,10 +154,10 @@ MonoBehaviour:
     y: 0
     width: 1360
     height: 590
-  m_MinSize: {x: 306, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 304, y: 200}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 2217
+  controlID: 1098
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -256,8 +256,8 @@ MonoBehaviour:
     y: 0
     width: 560
     height: 948
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -372,7 +372,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: b404feff8805feff5a34feff6237feff6a37feff7237feff3c49feff104afeffe278feffea7bfefff27bfefffa7bfeff76a6feff9cabfeff6eacfeff40dbfeff48defeff50defeff58defeff62eefeffe078fffffcf2ffffa4f6ffff98fbffff0000000038320000de440000e844000070550000
+    m_ExpandedIDs: ee55ffffcc56ffff9e85ffff1289ffff1a89ffff2289ffff52a8ffff98fbffff00000000943c000032a601003ca60100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -423,14 +423,14 @@ MonoBehaviour:
     height: 569
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 361.48656387834745
+  lastFramingTime: 544.8329996262366
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 444.5, y: 276, z: 0}
+    m_Target: {x: 444.5, y: 91, z: 0}
     speed: 2
-    m_Value: {x: 444.5, y: 276, z: 0}
+    m_Value: {x: 444.5, y: 91, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -454,13 +454,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.029995257, y: 0.004498036, z: -0.0001330157, w: 0.99954814}
+    m_Target: {x: -0.09657588, y: 0.12507208, z: 0.012230719, w: 0.9873749}
     speed: 2
-    m_Value: {x: -0.029995257, y: -0.004498036, z: 0.0001330157, w: -0.99954814}
+    m_Value: {x: -0.0965745, y: 0.12507029, z: 0.012230544, w: 0.9873608}
   m_Size:
-    m_Target: 599.38165
+    m_Target: 707.9937
     speed: 2
-    m_Value: 599.38165
+    m_Value: 707.9937
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -576,10 +576,10 @@ MonoBehaviour:
   m_LastProjectPath: E:\IT\Unity\Projekty\StrefaKursow\Racing Ball
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 322d0000
-    m_LastClickedID: 11570
-    m_ExpandedIDs: 000000008227000040280000ba310000bc310000be310000c0310000c231000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 4}
+    m_SelectedIDs: 3c2d0000
+    m_LastClickedID: 11580
+    m_ExpandedIDs: 000000008227000042280000382d0000463f0000483f00004a3f00004c3f00004e3f000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -607,7 +607,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008227000040280000ba310000bc310000be310000c0310000c231000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000008227000042280000382d0000463f0000483f00004a3f00004c3f00004e3f000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -634,7 +634,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000944efefffa28000026270000ba280000142900002c2b00005c2b0000f6280000122e0000322a00009c890000e6050000c889000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
